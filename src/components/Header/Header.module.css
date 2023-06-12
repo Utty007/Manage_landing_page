@@ -1,0 +1,26 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 90px;
+    width: auto;
+    height: auto;
+    box-sizing: content-box;
+}
+
+.links {
+    display: flex;
+}
+
+.links > span {
+    padding: 0 10px;
+    font-size: 16px;
+    transition: color .25s ease-in;
+}
+
+.links > span:hover {
+    cursor: pointer;
+    color: hsl(227, 12%, 61%);
+}
+

@@ -1,1 +1,7 @@
-
+.Img {
+    position: absolute;
+    top: -120px;
+    right: -90px;
+    z-index: -1;
+    width: 550px;
+}
