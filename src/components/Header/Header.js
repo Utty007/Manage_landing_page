@@ -15,7 +15,7 @@ const Header = () => {
         <span>Careers</span>
         <span>Community</span>
       </div>
-      <Button />
+      <Button>Get Started</Button>
     </div>
   );
 };
