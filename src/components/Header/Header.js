@@ -1,4 +1,4 @@
-import ManageLogo from "../../../images/logo.svg";
+import ManageLogo from "../../images/logo.svg";
 
 const Header = () => {
   return (
@@ -19,3 +19,5 @@ const Header = () => {
     </div>
   );
 };
+
+export default Header;
