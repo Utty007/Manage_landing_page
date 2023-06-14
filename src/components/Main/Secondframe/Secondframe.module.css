@@ -1,0 +1,28 @@
+.part1 > p{
+    color: hsl(227, 12%, 61%);
+}
+
+.part2 {
+    list-style-type: none;
+    padding: 0 0 0 50px;
+}
+
+.Text {
+    display: flex;
+    padding: 20px 80px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.innerFrame {
+    display: flex;
+    align-items: baseline;
+}
+
+.ift {
+    padding: 0 0 0 30px;
+}
+
+.ift > p {
+    color: hsl(227, 12%, 61%);
+}
