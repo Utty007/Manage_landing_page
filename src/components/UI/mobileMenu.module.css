@@ -1,0 +1,30 @@
+.mobileMenu {
+    width: 70%;
+    font-size: 18px;
+    margin: 50px auto 0 auto;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+    top: 120px;
+    left: 15%;
+    z-index: 12;
+    font-weight: 900;
+    flex-direction: column;
+    animation: zoomIn .5s ease-in;
+    animation-iteration-count: 1;
+}
+
+.mobileMenu > span {
+    padding: 10px 0;
+}
+
+@keyframes zoomIn {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

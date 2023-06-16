@@ -1,0 +1,8 @@
+.Thirdframe {
+    margin: 100px 0;
+    padding: 0 80px;
+}
+
+.Thirdframe > h1 {
+    margin-bottom: 30px
+}

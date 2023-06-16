@@ -1,0 +1,33 @@
+.Part1 {
+    background-color: hsl(12, 88%, 59%);
+    background-image: url(../../images/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-origin: content-box;
+    height: 200px;
+}
+
+.Inner {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    height: 100%;
+}
+
+.Inner > h1 {
+    color: white;
+    text-align: left;
+}
+
+.Button > button {
+    background-color: hsl(13, 100%, 96%);
+    color: hsl(12, 88%, 59%);
+    border: 0px;
+    border-radius: 20px;
+    transition: all .1s ease-in;
+    padding: 12px;
+    cursor: pointer;
+}

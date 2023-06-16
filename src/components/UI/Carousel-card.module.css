@@ -1,0 +1,15 @@
+.Carousel {
+    width: auto;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.image {
+    width: 100px;
+}

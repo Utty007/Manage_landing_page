@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Firstframe from "./components/Main/Firstframe/Firstframe";
 import Secondframe from "./components/Main/Secondframe/Secondframe";
@@ -13,6 +14,7 @@ function App() {
       <Firstframe />
       <Secondframe />
       <Thirdframe />
+      <Footer />
     </div>
   );
 }

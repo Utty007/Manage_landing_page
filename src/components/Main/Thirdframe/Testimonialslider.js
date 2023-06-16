@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Carousel, Slider } from "react-slick";
+import Carousel from "../../UI/Carousel-card";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialSlider = ({ testimonials }) => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -9,16 +12,16 @@ const TestimonialSlider = ({ testimonials }) => {
   }, [testimonials]);
 
   return (
-    <Carousel dots={false} arrows={false} infinite={true}>
+    <Slider slidesToShow={3} dots={false} arrows={false} infinite={true}>
       {testimonials.map((testimonial, index) => (
-        <Slider key={index}>
-          <div className="testimonial">
-            <h4>{testimonial.name}</h4>
-            <p>{testimonial.text}</p>
-          </div>
-        </Slider>
+        <Carousel
+          key={index}
+          name={testimonial.name}
+          comment={testimonial.comment}
+          image={testimonial.image}
+        />
       ))}
-    </Carousel>
+    </Slider>
   );
 };
 

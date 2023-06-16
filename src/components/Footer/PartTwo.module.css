@@ -1,0 +1,43 @@
+.Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 35px 80px;
+    background-color:hsl(233, 12%, 13%);
+    color: white;
+}
+
+.Footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.hpl > span:hover {
+  cursor: pointer;
+  color: hsl(12, 88%, 59%);
+}
+
+.icons > svg {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icons > svg:hover > path {
+    fill: hsl(12, 88%, 59%);
+}
+
+.input {
+    display: flex;
+}
+
+.input > input {
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    border: 0px;
+    margin-right: 5px;
+    color: hsl(12, 88%, 59%);
+}
+
