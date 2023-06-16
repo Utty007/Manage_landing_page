@@ -5,12 +5,10 @@
     background-size: cover;
     background-position: left;
     background-origin: content-box;
-    height: 200px;
 }
 
 .Inner {
     display:flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
@@ -30,4 +28,21 @@
     transition: all .1s ease-in;
     padding: 12px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .Inner {
+        flex-direction: column;
+        padding: 30px 80px
+    }
+
+    .Inner > h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Inner {
+        padding: 30px 30px;
+    }
 }

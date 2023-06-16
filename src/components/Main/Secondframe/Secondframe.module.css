@@ -26,3 +26,33 @@
 .ift > p {
     color: hsl(227, 12%, 61%);
 }
+
+@media screen and (max-width: 850px) {
+    .Text {
+        flex-direction: column;
+    }
+
+    .part1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Text {
+        padding: 20px 30px;
+    }
+
+    .part2 {
+    padding: 0 0 0 30px;
+}
+}
+
+@media screen and (max-width: 420px) {
+    .Text {
+        padding: 20px 10px;
+    }
+
+    .part2 {
+        padding: 0 0 0 15px;
+    }
+}

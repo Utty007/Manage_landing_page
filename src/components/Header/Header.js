@@ -12,6 +12,7 @@ const Header = () => {
 
   const menuToggleHandler = () => {
     setMenuToggle(!menuToggle);
+    document.body.style.overflow = menuToggle ? "hidden" : "auto";
   };
   return (
     <>

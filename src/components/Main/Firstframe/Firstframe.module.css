@@ -33,3 +33,44 @@
     min-width: 300px;
     /* max-height: 500px; */
 }
+
+@media screen and (max-width: 850px) {
+    .Frame1 {
+        flex-direction: column-reverse;
+    }
+
+    .Image {
+        max-width: 85%;
+    }
+
+    .Image > img {
+        max-width: 100%;
+    }
+
+    .Text {
+        max-width: 85%;
+        text-align: center;
+         margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Frame1 {
+        padding: 20px 30px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .Frame1 {
+        padding: 20px 0;
+    }
+
+    .Image {
+        max-width: 95%;
+    }
+
+    .Text {
+        max-width: 95%;
+    }
+}

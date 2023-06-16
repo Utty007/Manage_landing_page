@@ -13,11 +13,14 @@ const PartTwo = () => {
     } else {
       setEmailIsNotValid(true);
     }
+
+    emailInput.current.value = "";
   };
 
   return (
     <div className={Style.Footer}>
-      <div>
+      <p className={Style.cpr}>Copyright 2020 &copy;. All rights reserved</p>
+      <div className={Style.fd01}>
         <span>
           <img src={manageLogo} />
         </span>
@@ -54,24 +57,30 @@ const PartTwo = () => {
           </svg>
         </span>
       </div>
-      <div className={Style.hpl}>
-        <span>Home</span>
-        <span>Pricing</span>
-        <span>Products</span>
-        <span>About us</span>
+      <div className={Style.hyplinks}>
+        <div className={Style.hpl}>
+          <span>Home</span>
+          <span>Pricing</span>
+          <span>Products</span>
+          <span>About us</span>
+        </div>
+        <div className={Style.hpl}>
+          <span>Careers</span>
+          <span>Community</span>
+          <span>Privacy policy</span>
+        </div>
       </div>
-      <div className={Style.hpl}>
-        <span>Careers</span>
-        <span>Community</span>
-        <span>Privacy policy</span>
-      </div>
-      <div>
+      <div className={Style.fd02}>
         <div className={Style.input}>
           <input type="email" ref={emailInput} />
           <Button onClick={value}>Go</Button>
-          {emailIsNotValid ? <p>Please insert a valid email</p> : null}
         </div>
-        <p>Copyright 2020 &copy;. All rights reserved</p>
+        <p className={emailIsNotValid ? Style.warning : Style.hidden}>
+          Please insert a valid email
+        </p>{" "}
+        <p className={Style.copyright}>
+          Copyright 2020 &copy;. All rights reserved
+        </p>
       </div>
     </div>
   );

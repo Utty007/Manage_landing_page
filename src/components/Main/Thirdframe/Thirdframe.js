@@ -37,7 +37,9 @@ const Thirdframe = () => {
     <div className={Styles.Thirdframe}>
       <h1>What they've Said</h1>
       <TestimonialSlider testimonials={testimonies} />
-      <Button>Get Started</Button>
+      <div className={Styles.btn}>
+        <Button>Get Started</Button>
+      </div>
     </div>
   );
 };

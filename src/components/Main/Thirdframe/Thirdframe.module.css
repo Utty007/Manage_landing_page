@@ -6,3 +6,24 @@
 .Thirdframe > h1 {
     margin-bottom: 30px
 }
+
+.btn {
+    margin-top: 50px;
+}
+@media screen and (max-width: 500px) {
+    .Thirdframe {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .Thirdframe {
+        padding: 0;
+    }
+}
